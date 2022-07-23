@@ -1,0 +1,10 @@
+on: push
+name: External Push
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            echo "Hello this is ajit."
